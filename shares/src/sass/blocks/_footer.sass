@@ -1,0 +1,91 @@
+.footer 
+    background-color: #F4F4F4
+    padding: 24px 5px
+    &__block
+        display: flex
+        justify-content: space-between
+        position: relative
+        height: 100px
+        @media (max-width: 576px)
+            height: 164px
+            flex-direction: column
+    &__nav
+        display: flex
+        flex-direction: column
+        justify-content: space-between 
+        font-size: 16px
+        @media (max-width: 576px)
+            font-size: 14px
+        ul
+            display: flex
+            justify-content: space-between
+            gap: 24px
+            list-style-type: none
+            padding: 0
+            margin: 0
+            @media (max-width: 768px)
+                gap: 0
+    &__copyright
+        color: #8D8D8D
+        font-size: 14px
+        @media (max-width: 576px)
+            font-size: 12px
+            margin-top: 150px
+    &__info
+        display: flex
+        flex-direction: column
+        gap: 36px
+        align-items: flex-end
+    &__contacts 
+        display: flex
+        justify-content: space-between
+        gap: 62px
+        @media (max-width: 992px)
+            position: absolute
+            left: 0
+            top: 42px
+            gap: 24px
+        @media (max-width: 576px)
+            flex-direction: column
+            font-size: 14px
+            gap: 10px
+    &__phone, &__mail
+        display: flex
+        gap: 10px
+        align-items: center
+        cursor: pointer
+    .phoneImg
+        width: 23px
+        height: 18px
+    .mailImg
+        width: 22px
+        height: 15px
+    &__social
+        display: flex
+        gap: 12px
+        @media (max-width: 576px)
+            position: absolute
+            top: 104px
+            left: 0px
+        img
+            width: 24px
+            height: 24px
+            @media (max-width: 576px)
+                width: 18px
+                height: 18px
+    &__icon
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: #ffffff
+        border: solid 1px #8D8D8D
+        border-radius: 50%
+        width: 40px
+        height: 40px
+        cursor: pointer
+        :hover
+            transform: scale(1.2)
+            transition: 0.4 all
+        @media (max-width: 768px)
+            width: 30px
+            height: 30px
